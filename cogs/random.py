@@ -79,7 +79,7 @@ class randomCog(commands.Cog):
   @commands.command()
   @commands.guild_only()
   async def reportbug(self, ctx, *, bug):
-    if ctx.author.id == None:
+    if ctx.author.id == None: # add blacklisted users here
       return
     else:
       owner = self.client.get_user(660563979684544513)
@@ -89,7 +89,7 @@ class randomCog(commands.Cog):
   @commands.command()
   @commands.guild_only()
   async def feedback(self, ctx, *, feedback):
-    if ctx.author.id == None:
+    if ctx.author.id == None: # add blacklisted users here
       return
     else:
       owner = self.client.get_user(660563979684544513)
