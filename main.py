@@ -13,11 +13,8 @@ try:
     with open("config.json") as f:
         geb1 = json.load(f)
 except:
-    amount = 25
-    for i in range(amount):
+    while 1 == 1:
         print(f"Failed xd - check config.json file")
-        time.sleep(0.1)
-    sys.exit(1)
 
 with open("config.json") as f:
     token1 = geb1["token"]
